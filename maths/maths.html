@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        
+        <title>Maths Calculator</title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="maths.css" rel="stylesheet">
+        <link href="mediam376.css" rel="stylesheet">
+        <link rel="stylesheet" href="../hamburger.css">
+        <link rel="shortcut icon" type="image/x-icon" href="../components/p.jpg" >
+        <script src="maths.js" defer></script>
+        
+    </head>
+    <body>
+        <span class="container">
+            <div class="background">
+            <header class="header">
+              <a class="logo" href="../index.html" target="_blank">
+                <!-- <img class="logopic" src="https://www.graphicsprings.com/filestorage/stencils/8d2e545808831f4e621990a5de7a6d5a.png?width=500&height=500"> -->
+                Maths Calculator
+              </a>
+              <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                  <span></span>
+                </label>
+            
+                <ul class="menu__box">
+                  <li><a class="menu__item" href="../physics/physics.html" target="_blank">Physics calculator</a></li>
+                  <li><a class="menu__item" href="maths.html">Maths calculator</a></li>
+                  <li><a class="menu__item" href="../chemistry/chemistry.html" target="_blank">Chemistry calculator</a></li>
+                  <!-- <li><a class="menu__item" href="#">Contact</a></li>
+                  <li><a class="menu__item" href="#">Twitter</a></li> -->
+                </ul>
+              </div>
+                <nav class="nav-items">
+                  <a href="../index.html" onclick="home();" target="_blank">Home</a>
+                  <a href="#" onclick="aboutp();">About me</a>
+                  <a href="#">Contact</a>
+                </nav>
+              </header>
+        <section id="header-container" class="header-container">
+            <select id="calculators" onclick="update();">
+                <option value="Calculator-Choice">Choose your operation!</option>
+                <option value="-">Cubic equation calcuator</option>
+                <option value="-">Logrithmic equation solver</option>
+                <option value="-">Combination Calculator</option>
+                <option value="-">Permutation Calculator</option>
+                <option value="-">GCF Calculator</option>
+                <option value="-">LCM Calculator</option>
+                <option value="-">Binomial distribution Calculator</option>
+                <option value="-">Definite integral Calculator</option>
+                <option value="-">Derivative Calculator</option>
+                <option value="-">Infinite series Calculator</option>
+                <option value="-">Limit Calculator</option>
+            </select>
+        </section>
+        <section>
+        
+
+            <div class="def" id="def" style="display:none"></div>
+            <div class="formula" id="formula" style="display:none"></div>
+          
+        
+            <div class="calculators-grid" id="calculators-grid">
+                <div class="input1" id="input1header" style="display:none"></div>
+                <input type="hidden" id="input1"/>
+                <div class='input2' id="input2header" style="display:none"></div>
+                <input type="hidden" id="input2"/>
+                <div class='input3' id="input3header" style="display:none"></div>
+                <input type="hidden" id="input3"/>
+                <div class='input4' id="input4header" style="display:none"></div>
+                <input type="hidden" id="input4"/>
+                <div class='input5' id="input5header" style="display:none"></div>
+                <input type="hidden" id="input5"/>
+                <button class='calculate' hidden="hidden" id='Calculate' onclick="calc();">Calculate</button>
+                <div class="output" id="OutputBox" style="display:none">
+                    <div class="result" style="display:none" id="result"></div>
+                </div>
+            </div>
+            <div class="about-me" id="about-me" style="display:none">
+              <div class="about-me-text">
+                <h2>About Me</h2>
+                <p>I am a web developer and I love to create websites. I am a very good developer and I am always looking for new projects. I am a very good developer and I am always looking for new projects.</p>
+              </div>
+              <img src="../components/toon pic.jpeg" alt="me">
+            </div>
+        </section>   
+
+        <footer class="footer">
+            <div class="copy">&copy; 2022 Developer</div>
+            <div class="bottom-links">
+              <div class="links">
+                <span>More Info</span>
+                <a href="../index.html" onclick="home();" target="_blank">Home</a>
+                <a href="#" onclick="aboutp();">About me</a>
+                <a href="#">Contact</a>
+              </div>
+              <div class="links">
+                <span>Social Links</span>
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                <a href="https://github.com/Pradarss" target="_blank"><i class="fa fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/adarsh-verma-3a9230240/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                <a href="https://www.quora.com/profile/Adarsh-Verma-612" target="_blank"><i class="fa fa-quora"></i></a>
+              </div>
+            </div>
+          </footer>
+        
+    </body>
+</html>
