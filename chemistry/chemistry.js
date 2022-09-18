@@ -160,7 +160,7 @@ function update() {
 
         // document.getElementById('formula').innerHTML = '<img class="acceleration" alt="\overline{a} = \frac{v - v_0}{t} = \frac{\Delta v}{\Delta t}" src="https://www.gstatic.com/education/formulas2/443397389/en/acceleration.svg" role="img" data-atf="0" data-frt="0">';
     }
-    if(calc === 'Friction-Calculator') {
+    if(calc === 'theoretical-yield-calculator') {
         // document.getElementById('title').innerText = 'Force Calculater';
         document.getElementById('input1').value = '';
         document.getElementById('input2').value = '';
@@ -168,8 +168,8 @@ function update() {
         document.getElementById('input4').value = '';
         document.getElementById('input5').value = '';
 
-        document.getElementById('input1header').innerText = 'Friction Coefficient (μ)';
-        document.getElementById('input2header').innerText = 'Normal Force (N)';
+        document.getElementById('input1header').innerText = 'Actual Yield';
+        document.getElementById('input2header').innerText = 'Percent Yield';
         document.getElementById('input3header').innerText = '';
         document.getElementById('input4header').innerText = '';
         document.getElementById('input5header').innerText = '';
@@ -193,12 +193,12 @@ function update() {
         document.getElementById('OutputBox').style.display = '';
         document.getElementById('result').innerText = ''
 
-		document.getElementById('def').innerHTML = 'Friction is a type of relative force that acts as a resistance between two bodies that are in contact with each other. In other words when two bodies are in contact with each other there exists a force which opposes their relative motion.';
+		document.getElementById('def').innerHTML = 'The quantity of a product obtained from a reaction is expressed in terms of the yield of the reaction. The amount of product predicted by stoichiometry is called the theoretical yield, whereas the amount obtained actually is called the actual yield.';
 
-        document.getElementById('formula').innerHTML = '<img class="friction" alt="f = \mu N" src="https://www.gstatic.com/education/formulas2/443397389/en/friction_force.svg" role="img" data-atf="0" data-frt="0">';
+        // document.getElementById('formula').innerHTML = '<img class="friction" alt="f = \mu N" src="https://www.gstatic.com/education/formulas2/443397389/en/friction_force.svg" role="img" data-atf="0" data-frt="0">';
     }
 
-	if(calc === 'molality-Calculator') {
+	if(calc === 'molality-calculator') {
         // document.getElementById('title').innerText = 'Force Calculater';
         document.getElementById('input1').value = '';
         document.getElementById('input2').value = '';
@@ -236,7 +236,7 @@ function update() {
         // document.getElementById('formula').innerHTML = '<img class="kinetic" alt="f = \mu N" src="https://cdn.discordapp.com/attachments/946258944534401085/995288463572226121/Screenshot-2020-09-30-at-21.34.18-removebg-preview.png" role="img" data-atf="0" data-frt="0">';
     }
 
-	if(calc === 'activation-energy-Calculator') {
+	if(calc === 'activation-energy-calculator') {
         // document.getElementById('title').innerText = 'Force Calculater';
         document.getElementById('input1').value = '';
         document.getElementById('input2').value = '';
@@ -274,7 +274,7 @@ function update() {
         // document.getElementById('formula').innerHTML = '<img class="torque" alt="\tau = rF\sin\theta" src="https://www.gstatic.com/education/formulas2/443397389/en/torque.svg" role="img" data-atf="0" data-frt="0">';
     }
 
-	if(calc === 'Inertia-Calculator') {
+	if(calc === 'vanderwaals-equation-calculator') {
         // document.getElementById('title').innerText = 'Force Calculater';
         document.getElementById('input1').value = '';
         document.getElementById('input2').value = '';
@@ -282,37 +282,37 @@ function update() {
         document.getElementById('input4').value = '';
         document.getElementById('input5').value = '';
 
-        document.getElementById('input1header').innerText = 'Angular Momentum (l)';
-        document.getElementById('input2header').innerText = 'Angular Velocity (w)';
-        document.getElementById('input3header').innerText = '';
-        document.getElementById('input4header').innerText = '';
-        document.getElementById('input5header').innerText = '';
+        document.getElementById('input1header').innerText = 'Temperature (T)';
+        document.getElementById('input2header').innerText = 'Number of moles (n)';
+        document.getElementById('input3header').innerText = 'Volume (V)';
+        document.getElementById('input4header').innerText = 'Attraction b/w particles (a)';
+        document.getElementById('input5header').innerText = 'Vol. excluded by a mole (b)';
         
         document.getElementById('def').style.display = '';
         document.getElementById('formula').style.display = '';
 		document.getElementById('input1header').style.display = '';
         document.getElementById('input2header').style.display = '';
-        document.getElementById('input3header').style.display = 'none';
-        document.getElementById('input4header').style.display = 'none';
-        document.getElementById('input5header').style.display = 'none';
+        document.getElementById('input3header').style.display = '';
+        document.getElementById('input4header').style.display = '';
+        document.getElementById('input5header').style.display = '';
 
         document.getElementById('input1').type = 'text';
         document.getElementById('input2').type = 'text';
-        document.getElementById('input3').type = 'hidden';
-        document.getElementById('input4').type = 'hidden';
-        document.getElementById('input5').type = 'hidden';
+        document.getElementById('input3').type = 'text';
+        document.getElementById('input4').type = 'text';
+        document.getElementById('input5').type = 'text';
 
         document.getElementById('Calculate').hidden = "";
 
         document.getElementById('OutputBox').style.display = '';
         document.getElementById('result').innerText = ''
 
-		document.getElementById('def').innerHTML = 'A  property of matter by which it continues in its existing state of rest or uniform motion in a straight line, unless that state is changed by an external force.';
+		document.getElementById('def').innerHTML = 'Van der waal force is the relatively weak attractive forces that act on neutral atoms and molecules and that arise because of the electric polarization induced in each of the particles by the presence of other particles.';
 
-        document.getElementById('formula').innerHTML = '<img class="inertia" alt="I=\frac{L}{\omega}" src="https://www.gstatic.com/education/formulas2/443397389/en/moment_of_inertia.svg" role="img" data-atf="0" data-frt="0">';
+        // document.getElementById('formula').innerHTML = '<img class="inertia" alt="I=\frac{L}{\omega}" src="https://www.gstatic.com/education/formulas2/443397389/en/moment_of_inertia.svg" role="img" data-atf="0" data-frt="0">';
     }
 
-	if(calc === 'Density-Calculator') {
+	if(calc === 'nernst-equation-calculator') {
         // document.getElementById('title').innerText = 'Force Calculater';
         document.getElementById('input1').value = '';
         document.getElementById('input2').value = '';
@@ -330,13 +330,51 @@ function update() {
         document.getElementById('formula').style.display = '';
 		document.getElementById('input1header').style.display = '';
         document.getElementById('input2header').style.display = '';
-        document.getElementById('input3header').style.display = 'none';
+        document.getElementById('input3header').style.display = '';
+        document.getElementById('input4header').style.display = '';
+        document.getElementById('input5header').style.display = 'none';
+
+        document.getElementById('input1').type = 'text';
+        document.getElementById('input2').type = 'text';
+        document.getElementById('input3').type = 'text';
+        document.getElementById('input4').type = 'text';
+        document.getElementById('input5').type = 'hidden';
+
+        document.getElementById('Calculate').hidden = "";
+
+        document.getElementById('OutputBox').style.display = '';
+        document.getElementById('result').innerText = ''
+
+		document.getElementById('def').innerHTML = 'The Nernst equation defines the relationship between cell potential to standard potential and to the activities of the electrically active (electroactive) species. It relates the effective concentrations (activities) of the components of a cell reaction to the standard cell potential.';
+
+        // document.getElementById('formula').innerHTML = '<img class="density" alt="\rho ={\frac {m}{V}}" src="https://www.gstatic.com/education/formulas2/443397389/en/density.svg" role="img" data-atf="0" data-frt="0">"';
+    }
+
+	if(calc === 'gibbs-free-energy-calculator') {
+        // document.getElementById('title').innerText = 'Force Calculater';
+        document.getElementById('input1').value = '';
+        document.getElementById('input2').value = '';
+        document.getElementById('input3').value = '';
+        document.getElementById('input4').value = '';
+        document.getElementById('input5').value = '';
+
+        document.getElementById('input1header').innerText = 'Enthalpy (H)';
+        document.getElementById('input2header').innerText = 'Temperature (T)';
+        document.getElementById('input3header').innerText = 'Change in entropy (S)';
+        document.getElementById('input4header').innerText = '';
+        document.getElementById('input5header').innerText = '';
+        
+        document.getElementById('def').style.display = '';
+        document.getElementById('formula').style.display = '';
+		document.getElementById('input1header').style.display = '';
+        document.getElementById('input2header').style.display = '';
+        document.getElementById('input3header').style.display = '';
         document.getElementById('input4header').style.display = 'none';
         document.getElementById('input5header').style.display = 'none';
 
         document.getElementById('input1').type = 'text';
         document.getElementById('input2').type = 'text';
-        document.getElementById('input3').type = 'hidden';
+        document.getElementById('input3').type = 'text';
         document.getElementById('input4').type = 'hidden';
         document.getElementById('input5').type = 'hidden';
 
@@ -345,12 +383,12 @@ function update() {
         document.getElementById('OutputBox').style.display = '';
         document.getElementById('result').innerText = ''
 
-		document.getElementById('def').innerHTML = 'Density is the measurement of how tightly a material is packed together. It is defined as the mass per unit volume.';
+		document.getElementById('def').innerHTML = 'The Gibbs free energy of a system at any moment in time is defined as the enthalpy of the system minus the product of the temperature times the entropy of the system.';
 
-        document.getElementById('formula').innerHTML = '<img class="density" alt="\rho ={\frac {m}{V}}" src="https://www.gstatic.com/education/formulas2/443397389/en/density.svg" role="img" data-atf="0" data-frt="0">"';
+        // document.getElementById('formula').innerHTML = '<img class="work" alt="W=Fs" src="https://www.gstatic.com/education/formulas2/443397389/en/work.svg" role="img" data-atf="0" data-frt="0">"';
     }
 
-	if(calc === 'Work-Done-Calculator') {
+	if(calc === 'battery-life-calculator') {
         // document.getElementById('title').innerText = 'Force Calculater';
         document.getElementById('input1').value = '';
         document.getElementById('input2').value = '';
@@ -358,8 +396,8 @@ function update() {
         document.getElementById('input4').value = '';
         document.getElementById('input5').value = '';
 
-        document.getElementById('input1header').innerText = 'Force (f)';
-        document.getElementById('input2header').innerText = 'Displacement (s)';
+        document.getElementById('input1header').innerText = 'capacity of battery';
+        document.getElementById('input2header').innerText = 'Load current';
         document.getElementById('input3header').innerText = '';
         document.getElementById('input4header').innerText = '';
         document.getElementById('input5header').innerText = '';
@@ -383,12 +421,12 @@ function update() {
         document.getElementById('OutputBox').style.display = '';
         document.getElementById('result').innerText = ''
 
-		document.getElementById('def').innerHTML = 'It is done only when a constant force applied on an object cause the object to move in the same direction as the force applied.\nWork is the product of force and displacement. In physics, a force is said to do work if, when acting, there is a movement of the point of application in the direction of the force.';
+		document.getElementById('def').innerHTML = 'Battery life is a measure of battery performance and longevity, which can be quantified in several ways: as run time on a full charge, as estimated by a manufacturer in milliampere hours, or as the number of charge cycles until the end of useful life.';
 
-        document.getElementById('formula').innerHTML = '<img class="work" alt="W=Fs" src="https://www.gstatic.com/education/formulas2/443397389/en/work.svg" role="img" data-atf="0" data-frt="0">"';
+        // document.getElementById('formula').innerHTML = '<img class="charge" alt="W=Fs" src="https://www.gstatic.com/education/formulas2/443397389/en/electric_charge.svg" role="img" data-atf="0" data-frt="0">"';
     }
 
-	if(calc === 'Charge-Calculator') {
+	if(calc === 'de-broglie-wavelength-calculator') {
         // document.getElementById('title').innerText = 'Force Calculater';
         document.getElementById('input1').value = '';
         document.getElementById('input2').value = '';
@@ -396,8 +434,8 @@ function update() {
         document.getElementById('input4').value = '';
         document.getElementById('input5').value = '';
 
-        document.getElementById('input1header').innerText = 'Current (i)';
-        document.getElementById('input2header').innerText = 'time (t)';
+        document.getElementById('input1header').innerText = 'Energy of Photon(E)';
+        document.getElementById('input2header').innerText = '';
         document.getElementById('input3header').innerText = '';
         document.getElementById('input4header').innerText = '';
         document.getElementById('input5header').innerText = '';
@@ -405,13 +443,13 @@ function update() {
         document.getElementById('def').style.display = '';
         document.getElementById('formula').style.display = '';
 		document.getElementById('input1header').style.display = '';
-        document.getElementById('input2header').style.display = '';
+        document.getElementById('input2header').style.display = 'none';
         document.getElementById('input3header').style.display = 'none';
         document.getElementById('input4header').style.display = 'none';
         document.getElementById('input5header').style.display = 'none';
 
         document.getElementById('input1').type = 'text';
-        document.getElementById('input2').type = 'text';
+        document.getElementById('input2').type = 'hidden';
         document.getElementById('input3').type = 'hidden';
         document.getElementById('input4').type = 'hidden';
         document.getElementById('input5').type = 'hidden';
@@ -421,47 +459,9 @@ function update() {
         document.getElementById('OutputBox').style.display = '';
         document.getElementById('result').innerText = ''
 
-		document.getElementById('def').innerHTML = 'Electric charge is the basic physical property of matter that causes it to experience a force when kept in an electric or magnetic field. An electric charge is associated with an electric field and the moving electric charge generates a magnetic field.';
+		document.getElementById('def').innerHTML = 'According to wave-particle duality, the De Broglie wavelength is a wavelength manifested in all the objects in quantum mechanics which determines the probability density of finding the object at a given point of the configuration space.';
 
-        document.getElementById('formula').innerHTML = '<img class="charge" alt="W=Fs" src="https://www.gstatic.com/education/formulas2/443397389/en/electric_charge.svg" role="img" data-atf="0" data-frt="0">"';
-    }
-
-	if(calc === 'Potential-Energy-Calculator') {
-        // document.getElementById('title').innerText = 'Force Calculater';
-        document.getElementById('input1').value = '';
-        document.getElementById('input2').value = '';
-        document.getElementById('input3').value = '';
-        document.getElementById('input4').value = '';
-        document.getElementById('input5').value = '';
-
-        document.getElementById('input1header').innerText = 'Mass (m)';
-        document.getElementById('input2header').innerText = 'Height (h)';
-        document.getElementById('input3header').innerText = '';
-        document.getElementById('input4header').innerText = '';
-        document.getElementById('input5header').innerText = '';
-        
-        document.getElementById('def').style.display = '';
-        document.getElementById('formula').style.display = '';
-		document.getElementById('input1header').style.display = '';
-        document.getElementById('input2header').style.display = '';
-        document.getElementById('input3header').style.display = 'none';
-        document.getElementById('input4header').style.display = 'none';
-        document.getElementById('input5header').style.display = 'none';
-
-        document.getElementById('input1').type = 'text';
-        document.getElementById('input2').type = 'text';
-        document.getElementById('input3').type = 'hidden';
-        document.getElementById('input4').type = 'hidden';
-        document.getElementById('input5').type = 'hidden';
-
-        document.getElementById('Calculate').hidden = "";
-
-        document.getElementById('OutputBox').style.display = '';
-        document.getElementById('result').innerText = ''
-
-		document.getElementById('def').innerHTML = 'potential energy, stored energy that depends upon the relative position of various parts of a system. A spring has more potential energy when it is compressed or stretched. A steel ball has more potential energy raised above the ground than it has after falling to Earth.';
-
-        document.getElementById('formula').innerHTML = '<img class="potential" alt="U=m g h" src="https://www.gstatic.com/education/formulas2/443397389/en/gravitational_energy.svg" role="img" data-atf="0" data-frt="0">';
+        // document.getElementById('formula').innerHTML = '<img class="potential" alt="U=m g h" src="https://www.gstatic.com/education/formulas2/443397389/en/gravitational_energy.svg" role="img" data-atf="0" data-frt="0">';
     }
 }
 
@@ -493,10 +493,10 @@ function calc()
         document.getElementById('result').innerText = (n1 - n2) + ' J/mol K';
     }
     
-    if(calc === 'friction-Calculator')
+    if(calc === 'theoretical-yield-calculator')
     {
         document.getElementById('result').style.display  = '';
-        document.getElementById('result').innerText = n1 * n2 + ' N';
+        document.getElementById('result').innerText = n1 / n2 + ' %';
     }
 
 	if(calc === 'molality-Calculator')
@@ -511,34 +511,34 @@ function calc()
         document.getElementById('result').innerText = (-8.31447215 * n1 * Math.log10(n2/n3)) + ' J/mol';
     }
 
-	if(calc === 'Inertia-Calculator')
+	if(calc === 'vanderwaals-equation-Calculator')
     {
         document.getElementById('result').style.display  = '';
-        document.getElementById('result').innerText = n1 / n2 + ' Kg m²';
+        document.getElementById('result').innerText = ((n2*8.3144621*n1)/(n3-n2*n5))-((n4*n2**2)/(n3**2)) + ' pascal';
     }
 
-	if(calc === 'Density-Calculator')
+	if(calc === 'nernst-equation-calculator')
     {
         document.getElementById('result').style.display  = '';
-        document.getElementById('result').innerText = n1 / n2 + ' Kg/m³';
+        document.getElementById('result').innerText = (n1-(0.05916/n2)*Math.log10(n3/n4)) + ' Volts';
     }
 
-	if(calc === 'Work-Done-Calculator')
+	if(calc === 'gibbs-free-energy-calculator')
     {
         document.getElementById('result').style.display  = '';
-        document.getElementById('result').innerText = n1 * n2 + ' J';
+        document.getElementById('result').innerText = (n1-(n2*n3)) + 'Kj/mol';
     }
 
-	if(calc === 'Charge-Calculator')
+	if(calc === 'battery-life-calculator')
     {
         document.getElementById('result').style.display  = '';
-        document.getElementById('result').innerText = n1 * n2 + ' C';
+        document.getElementById('result').innerText = n1 / n2 + ' mAh';
     }
 
-	if(calc === 'Potential-Energy-Calculator')
+	if(calc === 'de-broglie-wavelength-calculator')
     {
         document.getElementById('result').style.display  = '';
-        document.getElementById('result').innerText = n1 * n2 * 9.8 + ' J';
+        document.getElementById('result').innerText = (n1*(6.626*(10**(-34))))/(3*(10**8)) + ' m';
     }
 	
 }
